@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3gs6oibdefmk"]
+
+[ext_resource type="Texture2D" uid="uid://kgvwgkhsx7hh" path="res://assets/ventana.png" id="1_iq115"]
+[ext_resource type="Script" path="res://salir.gd" id="2_osfax"]
+[ext_resource type="Texture2D" uid="uid://btwj2ipfo2asi" path="res://assets/salir.png" id="3_ysw3q"]
+
+[node name="marketing" type="Node2D"]
+
+[node name="Oficina2" type="Sprite2D" parent="."]
+position = Vector2(585, 322)
+scale = Vector2(4, 4)
+texture = ExtResource("1_iq115")
+
+[node name="salir" type="Button" parent="."]
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 160.0
+offset_bottom = 160.0
+text = "
+"
+script = ExtResource("2_osfax")
+
+[node name="Sprite2D" type="Sprite2D" parent="salir"]
+position = Vector2(60, 60)
+scale = Vector2(3, 3.09)
+texture = ExtResource("3_ysw3q")
