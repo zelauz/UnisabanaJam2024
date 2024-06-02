@@ -1,0 +1,141 @@
+[gd_scene load_steps=9 format=3 uid="uid://ccpeatahhnfhk"]
+
+[ext_resource type="Script" path="res://escenarios/recursos_humanos.gd" id="1_61m3s"]
+[ext_resource type="Texture2D" uid="uid://g6phw6s4urfv" path="res://icon.svg" id="1_851a1"]
+[ext_resource type="Script" path="res://escenarios/Personal.gd" id="2_gpdbt"]
+[ext_resource type="PackedScene" uid="uid://b0r07omcgwyrh" path="res://escenarios/menu_contratacion.tscn" id="4_fag8e"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_odg7y"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_2kaxs"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_jd18f"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_3l1s0"]
+
+[node name="RecursosHumanos" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_61m3s")
+
+[node name="Publicidad2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.212
+anchor_bottom = 0.449
+offset_left = 3.0
+offset_top = 101.0
+offset_right = -43.224
+offset_bottom = -61.952
+grow_horizontal = 2
+grow_vertical = 2
+text = "Publicidad"
+
+[node name="Personal2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 0.182
+anchor_bottom = 0.759
+offset_left = -3.0
+offset_top = 40.0
+offset_right = -7.66402
+offset_bottom = 0.167969
+grow_horizontal = 2
+grow_vertical = 2
+text = "Personal"
+
+[node name="Publicidad" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.701
+anchor_right = 1.0
+anchor_bottom = 1.05
+offset_left = -150.552
+offset_bottom = -32.4
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Publicidad"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Personal" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 893.0
+offset_right = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_gpdbt")
+
+[node name="empleados" type="VBoxContainer" parent="Personal"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="T1" type="TextureButton" parent="Personal/empleados"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("1_851a1")
+stretch_mode = 3
+
+[node name="T2" type="TextureButton" parent="Personal/empleados"]
+layout_mode = 2
+size_flags_horizontal = 3
+disabled = true
+texture_normal = ExtResource("1_851a1")
+texture_disabled = SubResource("CanvasTexture_odg7y")
+stretch_mode = 3
+
+[node name="T3" type="TextureButton" parent="Personal/empleados"]
+layout_mode = 2
+size_flags_horizontal = 3
+disabled = true
+texture_normal = ExtResource("1_851a1")
+texture_disabled = SubResource("CanvasTexture_2kaxs")
+stretch_mode = 3
+
+[node name="T4" type="TextureButton" parent="Personal/empleados"]
+layout_mode = 2
+size_flags_horizontal = 3
+disabled = true
+texture_normal = ExtResource("1_851a1")
+texture_disabled = SubResource("CanvasTexture_jd18f")
+stretch_mode = 3
+
+[node name="T5" type="TextureButton" parent="Personal/empleados"]
+layout_mode = 2
+size_flags_horizontal = 3
+disabled = true
+texture_normal = ExtResource("1_851a1")
+texture_disabled = SubResource("CanvasTexture_3l1s0")
+stretch_mode = 3
+
+[node name="menu_contratacion" parent="." instance=ExtResource("4_fag8e")]
+visible = false
+layout_mode = 1
+offset_left = 2.0
+offset_right = 3.0
+
+[connection signal="pressed" from="Publicidad2" to="." method="_on_publicidad_2_pressed"]
+[connection signal="pressed" from="Personal2" to="." method="_on_personal_2_pressed"]
+[connection signal="pressed" from="Personal/empleados/T1" to="." method="_on_t_1_pressed"]
+[connection signal="pressed" from="Personal/empleados/T2" to="." method="_on_t_2_pressed"]
+[connection signal="pressed" from="Personal/empleados/T3" to="." method="_on_t_3_pressed"]
+[connection signal="pressed" from="Personal/empleados/T4" to="." method="_on_t_4_pressed"]
+[connection signal="pressed" from="Personal/empleados/T5" to="." method="_on_t_5_pressed"]
