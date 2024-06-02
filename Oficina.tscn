@@ -1,0 +1,65 @@
+[gd_scene load_steps=9 format=3 uid="uid://b3l8a5sns8iq1"]
+
+[ext_resource type="Texture2D" uid="uid://bjmxc8r5io6s8" path="res://assets/mesas.png" id="1_sqprq"]
+[ext_resource type="Texture2D" uid="uid://d3ktjpjqgk8y" path="res://assets/oficina.png" id="2_nqadb"]
+[ext_resource type="Texture2D" uid="uid://0nuustqooq2r" path="res://assets/tienda.png" id="3_cmuyb"]
+[ext_resource type="Texture2D" uid="uid://ck1ybevx22k40" path="res://assets/estudio.png" id="3_evhac"]
+[ext_resource type="Script" path="res://Arbol.gd" id="3_rdc2m"]
+[ext_resource type="Texture2D" uid="uid://fx5ft538li0b" path="res://assets/personal.png" id="4_gnpdv"]
+[ext_resource type="Script" path="res://Control_Personal.gd" id="5_b1psu"]
+[ext_resource type="Script" path="res://Tienda.gd" id="5_eiiv3"]
+
+[node name="Oficina" type="Node2D"]
+
+[node name="Mesas" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(585, 322)
+scale = Vector2(4, 4)
+texture = ExtResource("1_sqprq")
+
+[node name="Oficina" type="Sprite2D" parent="."]
+position = Vector2(585, 322)
+scale = Vector2(4, 4)
+texture = ExtResource("2_nqadb")
+
+[node name="Arbol" type="Button" parent="."]
+offset_left = 1000.0
+offset_top = 200.0
+offset_right = 1120.0
+offset_bottom = 320.0
+text = "
+"
+script = ExtResource("3_rdc2m")
+
+[node name="Sprite2D" type="Sprite2D" parent="Arbol"]
+position = Vector2(60, 60)
+scale = Vector2(3, 3.09)
+texture = ExtResource("3_evhac")
+
+[node name="Control_Personal" type="Button" parent="."]
+offset_left = 1000.0
+offset_top = 360.0
+offset_right = 1120.0
+offset_bottom = 480.0
+text = "
+"
+script = ExtResource("5_b1psu")
+
+[node name="Sprite2D" type="Sprite2D" parent="Control_Personal"]
+position = Vector2(60, 60)
+scale = Vector2(3, 3.09)
+texture = ExtResource("4_gnpdv")
+
+[node name="Tienda" type="Button" parent="."]
+offset_left = 1000.0
+offset_top = 40.0
+offset_right = 1120.0
+offset_bottom = 160.0
+text = "
+"
+script = ExtResource("5_eiiv3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Tienda"]
+position = Vector2(60, 60)
+scale = Vector2(3, 3.09)
+texture = ExtResource("3_cmuyb")

@@ -2,15 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-path="res://.godot/imported/oficina.png-b07e323cd554f4400b13b12b6087d608.ctex"
+uid="uid://b1fwclbs87p76"
+path="res://.godot/imported/pj7.png-46086c26dc373defc42200593069c54d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/oficina.png"
-dest_files=["res://.godot/imported/oficina.png-b07e323cd554f4400b13b12b6087d608.ctex"]
+source_file="res://assets/pj7.png"
+dest_files=["res://.godot/imported/pj7.png-46086c26dc373defc42200593069c54d.ctex"]
 
 [params]
 
