@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://Node.gd" id="1_j5vte"]
 
 [node name="Button" type="Button"]
+z_index = 2
 offset_left = 3.0
 offset_right = 51.0
 offset_bottom = 47.0

@@ -14,10 +14,10 @@ var delay = 10
 func add_line(neighbor):
 	var line = Line2D.new()
 	line.width = 2
-	line.z_index = -1
+	line.z_index = 1
 	line.add_point(position + size / 2)
 	line.add_point(neighbor.position + neighbor.size / 2)
-	line.set
+	line.default_color = Color(0.4 , 0.5, 0.2, 1)
 	lines.push_back(line)
 	neighbor.neighbor_lines.push_back(line)
 	get_parent().add_child(line)

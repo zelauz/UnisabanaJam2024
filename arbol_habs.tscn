@@ -8,15 +8,15 @@
 [node name="arbol_habs" type="Node2D"]
 
 [node name="Oficina2" type="Sprite2D" parent="."]
-position = Vector2(585, 322)
+position = Vector2(602, 332)
 scale = Vector2(1.2, 1.2)
 texture = ExtResource("1_kjx83")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Oficina2"]
-offset_left = -100.25
-offset_top = -80.0
-offset_right = 98.75
-offset_bottom = 80.0
+offset_left = -255.0
+offset_top = -254.0
+offset_right = 257.0
+offset_bottom = 255.0
 horizontal_scroll_mode = 2
 vertical_scroll_mode = 2
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://b3l8a5sns8iq1"]
 
-[ext_resource type="Texture2D" uid="uid://bjmxc8r5io6s8" path="res://assets/mesas.png" id="1_sqprq"]
-[ext_resource type="Texture2D" uid="uid://d3ktjpjqgk8y" path="res://assets/oficina.png" id="2_nqadb"]
+[ext_resource type="Texture2D" uid="uid://de6yncwktmuo8" path="res://assets/mesas.png" id="1_sqprq"]
+[ext_resource type="Texture2D" uid="uid://do3hmnlc12sk0" path="res://assets/oficina.png" id="2_nqadb"]
 [ext_resource type="Texture2D" uid="uid://0nuustqooq2r" path="res://assets/tienda.png" id="3_cmuyb"]
 [ext_resource type="Texture2D" uid="uid://ck1ybevx22k40" path="res://assets/estudio.png" id="3_evhac"]
 [ext_resource type="Script" path="res://Arbol.gd" id="3_rdc2m"]
