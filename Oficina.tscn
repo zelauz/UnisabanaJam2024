@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3 uid="uid://b3l8a5sns8iq1"]
+
+[ext_resource type="Texture2D" uid="uid://bjmxc8r5io6s8" path="res://assets/mesas.png" id="1_plkgs"]
+[ext_resource type="Texture2D" uid="uid://d3ktjpjqgk8y" path="res://assets/oficina.png" id="2_jxwk0"]
+[ext_resource type="Texture2D" uid="uid://drk83spdscmse" path="res://assets/personajes.png" id="3_uye1s"]
+[ext_resource type="Texture2D" uid="uid://ctr4fohba0ypf" path="res://icon.svg" id="4_014vg"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mi0vy"]
+texture = ExtResource("3_uye1s")
+texture_region_size = Vector2i(20, 30)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_38076"]
+sources/1 = SubResource("TileSetAtlasSource_mi0vy")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Mesas" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(585, 322)
+scale = Vector2(4, 4)
+texture = ExtResource("1_plkgs")
+
+[node name="Oficina" type="Sprite2D" parent="."]
+position = Vector2(585, 322)
+scale = Vector2(4, 4)
+texture = ExtResource("2_jxwk0")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_38076")
+format = 2
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 1002.0
+offset_top = 9.0
+offset_right = 1139.0
+offset_bottom = 139.0
+texture_normal = ExtResource("4_014vg")
