@@ -24,7 +24,6 @@ func _ready():
 			reset.push_back(child.position)
 
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
