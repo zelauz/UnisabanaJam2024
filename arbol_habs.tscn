@@ -1,15 +1,30 @@
-[gd_scene load_steps=4 format=3 uid="uid://bp4ru3lj07b4r"]
+[gd_scene load_steps=5 format=3 uid="uid://cx34747y6eay6"]
 
-[ext_resource type="Texture2D" uid="uid://kgvwgkhsx7hh" path="res://assets/ventana.png" id="1_uri1q"]
+[ext_resource type="Texture2D" uid="uid://dshofnlvsm1fs" path="res://assets/descarga (1).jpg" id="1_kjx83"]
 [ext_resource type="Script" path="res://salir.gd" id="2_rcpi6"]
+[ext_resource type="PackedScene" uid="uid://qqfjay6scrgk" path="res://techTree.tscn" id="2_unm0m"]
 [ext_resource type="Texture2D" uid="uid://btwj2ipfo2asi" path="res://assets/salir.png" id="3_gdi3f"]
 
 [node name="arbol_habs" type="Node2D"]
 
 [node name="Oficina2" type="Sprite2D" parent="."]
-position = Vector2(585, 322)
-scale = Vector2(4, 4)
-texture = ExtResource("1_uri1q")
+position = Vector2(602, 332)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_kjx83")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Oficina2"]
+offset_left = -255.0
+offset_top = -254.0
+offset_right = 257.0
+offset_bottom = 255.0
+horizontal_scroll_mode = 2
+vertical_scroll_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Oficina2/ScrollContainer"]
+layout_mode = 2
+
+[node name="techTree" parent="Oficina2/ScrollContainer/MarginContainer" instance=ExtResource("2_unm0m")]
+layout_mode = 2
 
 [node name="salir" type="Button" parent="."]
 offset_left = 40.0
@@ -19,6 +34,7 @@ offset_bottom = 160.0
 text = "
 "
 script = ExtResource("2_rcpi6")
+metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="salir"]
 position = Vector2(60, 60)
