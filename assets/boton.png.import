@@ -2,15 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-path="res://.godot/imported/contratar.png-6944e35b4f0db7bf19300f5d7aab8426.ctex"
+uid="uid://b315vhhhxxs8w"
+path="res://.godot/imported/boton.png-d51f79e3090aa5f5e65974a49f78907c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/contratar.png"
-dest_files=["res://.godot/imported/contratar.png-6944e35b4f0db7bf19300f5d7aab8426.ctex"]
+source_file="res://assets/boton.png"
+dest_files=["res://.godot/imported/boton.png-d51f79e3090aa5f5e65974a49f78907c.ctex"]
 
 [params]
 

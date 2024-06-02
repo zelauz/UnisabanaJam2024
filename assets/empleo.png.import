@@ -2,15 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-path="res://.godot/imported/contratar.png-6944e35b4f0db7bf19300f5d7aab8426.ctex"
+uid="uid://es06bghpv48d"
+path="res://.godot/imported/empleo.png-850c00ac6bc10b39c6e3982b9057691c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/contratar.png"
-dest_files=["res://.godot/imported/contratar.png-6944e35b4f0db7bf19300f5d7aab8426.ctex"]
+source_file="res://assets/empleo.png"
+dest_files=["res://.godot/imported/empleo.png-850c00ac6bc10b39c6e3982b9057691c.ctex"]
 
 [params]
 

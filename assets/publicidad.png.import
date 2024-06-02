@@ -2,15 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-path="res://.godot/imported/contratar.png-6944e35b4f0db7bf19300f5d7aab8426.ctex"
+uid="uid://0iph2x3vpo8n"
+path="res://.godot/imported/publicidad.png-6cd232ff8555142a6cc3cb1f194130d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/contratar.png"
-dest_files=["res://.godot/imported/contratar.png-6944e35b4f0db7bf19300f5d7aab8426.ctex"]
+source_file="res://assets/publicidad.png"
+dest_files=["res://.godot/imported/publicidad.png-6cd232ff8555142a6cc3cb1f194130d1.ctex"]
 
 [params]
 

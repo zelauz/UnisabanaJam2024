@@ -2,15 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-path="res://.godot/imported/contratar.png-6944e35b4f0db7bf19300f5d7aab8426.ctex"
+uid="uid://ckkahe0skwh6q"
+path="res://.godot/imported/mas.png-e8e84e66f47cbc7c5c7b455229b0975e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/contratar.png"
-dest_files=["res://.godot/imported/contratar.png-6944e35b4f0db7bf19300f5d7aab8426.ctex"]
+source_file="res://assets/mas.png"
+dest_files=["res://.godot/imported/mas.png-e8e84e66f47cbc7c5c7b455229b0975e.ctex"]
 
 [params]
 
