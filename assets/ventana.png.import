@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drk83spdscmse"
-path="res://.godot/imported/personajes.png-26afcd6cc9175d2df15f50afe04d60b4.ctex"
+uid="uid://kgvwgkhsx7hh"
+path="res://.godot/imported/ventana.png-39b7951633a80697fc164e713e02cc57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/personajes.png"
-dest_files=["res://.godot/imported/personajes.png-26afcd6cc9175d2df15f50afe04d60b4.ctex"]
+source_file="res://assets/ventana.png"
+dest_files=["res://.godot/imported/ventana.png-39b7951633a80697fc164e713e02cc57.ctex"]
 
 [params]
 
