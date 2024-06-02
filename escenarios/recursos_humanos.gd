@@ -27,6 +27,7 @@ func _nueva_publicidad(id:int):
 	var boton=boton_nuevo.instantiate() as Button
 	boton._me_precionaron.connect(self._button_pressed)
 	boton.text=info_boton[1]
+	
 	var label=boton.get_child(0)
 	label.text=str(info_boton[0])
 	label=boton.get_child(1)

@@ -1,17 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://ccpeatahhnfhk"]
+[gd_scene load_steps=8 format=3 uid="uid://ccpeatahhnfhk"]
 
 [ext_resource type="Script" path="res://escenarios/recursos_humanos.gd" id="1_61m3s"]
-[ext_resource type="Texture2D" uid="uid://g6phw6s4urfv" path="res://icon.svg" id="1_851a1"]
+[ext_resource type="Texture2D" uid="uid://0iph2x3vpo8n" path="res://assets/publicidad.png" id="2_gelj1"]
 [ext_resource type="Script" path="res://escenarios/Personal.gd" id="2_gpdbt"]
+[ext_resource type="Texture2D" uid="uid://bb20cw03gbhkr" path="res://assets/contratar.png" id="3_0f7or"]
 [ext_resource type="PackedScene" uid="uid://b0r07omcgwyrh" path="res://escenarios/menu_contratacion.tscn" id="4_fag8e"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_odg7y"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_2kaxs"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_jd18f"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_3l1s0"]
+[ext_resource type="Texture2D" uid="uid://ckkahe0skwh6q" path="res://assets/mas.png" id="5_viuje"]
+[ext_resource type="Texture2D" uid="uid://idyk8i4dq2v8" path="res://assets/candado.png" id="6_qtym3"]
 
 [node name="RecursosHumanos" type="Control"]
 layout_mode = 3
@@ -25,29 +20,33 @@ script = ExtResource("1_61m3s")
 [node name="Publicidad2" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 0.212
-anchor_bottom = 0.449
-offset_left = 3.0
-offset_top = 101.0
-offset_right = -43.224
-offset_bottom = -61.952
+anchor_right = 0.173
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = 223.0
+offset_right = -39.296
+offset_bottom = -305.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Publicidad"
+icon = ExtResource("2_gelj1")
+flat = true
+expand_icon = true
 
 [node name="Personal2" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_top = 0.5
-anchor_right = 0.182
-anchor_bottom = 0.759
-offset_left = -3.0
-offset_top = 40.0
-offset_right = -7.66402
-offset_bottom = 0.167969
+anchor_right = 0.179
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = 439.0
+offset_right = -46.208
+offset_bottom = -89.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Personal"
+icon = ExtResource("3_0f7or")
+flat = true
+icon_alignment = 1
+expand_icon = true
 
 [node name="Publicidad" type="ScrollContainer" parent="."]
 layout_mode = 1
@@ -91,39 +90,39 @@ alignment = 1
 [node name="T1" type="TextureButton" parent="Personal/empleados"]
 layout_mode = 2
 size_flags_horizontal = 3
-texture_normal = ExtResource("1_851a1")
+texture_normal = ExtResource("5_viuje")
 stretch_mode = 3
 
 [node name="T2" type="TextureButton" parent="Personal/empleados"]
 layout_mode = 2
 size_flags_horizontal = 3
 disabled = true
-texture_normal = ExtResource("1_851a1")
-texture_disabled = SubResource("CanvasTexture_odg7y")
+texture_normal = ExtResource("5_viuje")
+texture_disabled = ExtResource("6_qtym3")
 stretch_mode = 3
 
 [node name="T3" type="TextureButton" parent="Personal/empleados"]
 layout_mode = 2
 size_flags_horizontal = 3
 disabled = true
-texture_normal = ExtResource("1_851a1")
-texture_disabled = SubResource("CanvasTexture_2kaxs")
+texture_normal = ExtResource("5_viuje")
+texture_disabled = ExtResource("6_qtym3")
 stretch_mode = 3
 
 [node name="T4" type="TextureButton" parent="Personal/empleados"]
 layout_mode = 2
 size_flags_horizontal = 3
 disabled = true
-texture_normal = ExtResource("1_851a1")
-texture_disabled = SubResource("CanvasTexture_jd18f")
+texture_normal = ExtResource("5_viuje")
+texture_disabled = ExtResource("6_qtym3")
 stretch_mode = 3
 
 [node name="T5" type="TextureButton" parent="Personal/empleados"]
 layout_mode = 2
 size_flags_horizontal = 3
 disabled = true
-texture_normal = ExtResource("1_851a1")
-texture_disabled = SubResource("CanvasTexture_3l1s0")
+texture_normal = ExtResource("5_viuje")
+texture_disabled = ExtResource("6_qtym3")
 stretch_mode = 3
 
 [node name="menu_contratacion" parent="." instance=ExtResource("4_fag8e")]

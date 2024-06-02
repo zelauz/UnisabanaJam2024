@@ -1,9 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b0r07omcgwyrh"]
+[gd_scene load_steps=5 format=3 uid="uid://b0r07omcgwyrh"]
 
 [ext_resource type="Script" path="res://escenarios/menu_contratacion.gd" id="1_3rqql"]
-[ext_resource type="Texture2D" uid="uid://g6phw6s4urfv" path="res://icon.svg" id="2_5gdhg"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_k4q78"]
+[ext_resource type="Texture2D" uid="uid://c5aljs621r633" path="res://assets/TuEmpleo.png" id="2_itlpx"]
+[ext_resource type="Texture2D" uid="uid://btwj2ipfo2asi" path="res://assets/salir.png" id="2_tajru"]
+[ext_resource type="Texture2D" uid="uid://es06bghpv48d" path="res://assets/empleo.png" id="4_jhmlr"]
 
 [node name="menu_contratacion" type="Control" groups=["Editor"]]
 layout_mode = 3
@@ -38,9 +38,9 @@ offset_right = 142.5
 offset_bottom = 170.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("CanvasTexture_k4q78")
+texture = ExtResource("2_itlpx")
 
-[node name="Salir" type="TextureButton" parent="TextureRect"]
+[node name="Salir" type="Button" parent="TextureRect"]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -51,8 +51,9 @@ offset_right = 67.0
 offset_bottom = 134.0
 grow_horizontal = 0
 scale = Vector2(0.4, 0.4)
-texture_normal = ExtResource("2_5gdhg")
-stretch_mode = 1
+icon = ExtResource("2_tajru")
+flat = true
+expand_icon = true
 
 [node name="ScrollContainer" type="ScrollContainer" parent="TextureRect"]
 layout_mode = 1
@@ -63,11 +64,21 @@ offset_left = 1.0
 offset_top = 66.0
 offset_right = -1.0
 offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="MenuBar" type="GridContainer" parent="TextureRect/ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 columns = 2
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 160.0
+offset_right = 200.0
+offset_bottom = 40.0
+scale = Vector2(1.19883, 1.86345)
+texture = ExtResource("4_jhmlr")
 
 [connection signal="pressed" from="TextureRect/Salir" to="." method="_on_salir_pressed"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://qjpb40p0wct3"]
 
-[ext_resource type="Texture2D" uid="uid://g6phw6s4urfv" path="res://icon.svg" id="1_irkn4"]
+[ext_resource type="Texture2D" uid="uid://ctr4fohba0ypf" path="res://icon.svg" id="1_irkn4"]
 [ext_resource type="Script" path="res://escenarios/boton_contratacion.gd" id="2_hr4ff"]
 
 [node name="BotonContratacion" type="TextureButton"]
